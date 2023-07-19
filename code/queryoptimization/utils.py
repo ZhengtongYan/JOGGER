@@ -38,7 +38,7 @@ def get_logger(filename, verbosity=1, name=None):
 def init_pg():
     try:
         conn = psycopg2.connect(
-            database='im_database', user='imdb', password='', host='127.0.0.1', port='5432')
+            database='imdbload', user='postgres', password='pg123', host='127.0.0.1', port='5432')
 
     except:
         print("I am unable to connect to the database")

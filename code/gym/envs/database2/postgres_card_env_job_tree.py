@@ -109,7 +109,7 @@ class Train_Join_Job(gym.Env):
         ### config for postgre
         try:
             conn = psycopg2.connect(
-                database='im_database', user='imdb', password='', host='127.0.0.1', port='5432')
+                database='imdbload', user='postgres', password='pg123', host='127.0.0.1', port='5432')
         except:
             print("I am unable to connect to the database")
         self.cursor = conn.cursor()
